@@ -10,6 +10,6 @@ helloBtn.addEventListener("click",()=>{
         greeting = "こんばんは！";
     }
 
-    message.textContent = '${greeting} GitHub Pagesの公開に成功しました！';
+    message.textContent = `${greeting} GitHub Pagesの公開に成功しました!`;
 
 });
