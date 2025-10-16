@@ -9,5 +9,7 @@ helloBtn.addEventListener("click",()=>{
     } else if (hour >= 18) {
         greeting - "こんばんは！";
     }
+
     message.textContent = '${greeting} GitHub Pagesの公開に成功しました！';
+    
 });
