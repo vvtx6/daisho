@@ -22,5 +22,5 @@ body{
     font-family:"Yu Gothic","Meiryo",system-ui,-apple-system,sans-serif;
     color:var(--fg);background:radial-gradient(1600px 800px at 10% 0%,#e8efff 0%,var(--bg)40%);
     background-attachment:fixed;
-    color:#2563eb;
+    background-color:#2563eb;
 }
