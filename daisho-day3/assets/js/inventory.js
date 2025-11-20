@@ -8,10 +8,10 @@ const tbody = document.getElementById("item-list");
 
 function render() {
     tbody.innerHTML = "";
-    items.forEach(items => {
+    items.forEach(item => {
         const tr = document.createElement("tr");
 
-        if(items.stock<item.minStock){
+        if(item.stock<item.minStock){
             tr.classList.add("low-stock");
         }
 
@@ -21,12 +21,12 @@ function render() {
             <td>${item.price}</td>
             <td>${item.stock}</td>
             <td>
-                <button onclick = "change('${item.id}',1)"> + </button>
-                <button onclick = "change('${item.id}',-1)"> - </button>
+                <button onclick = "changeStock('${item.id}',1)"> + </button>
+                <button onclick = "changeStock('${item.id}',-1)"> - </button>
             </td>
-            `;
+        `;
 
-            tbody.appendChild(tr);
+        tbody.appendChild(tr);
     });
 }
 
